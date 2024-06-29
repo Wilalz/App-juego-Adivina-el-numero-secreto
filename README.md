@@ -7,14 +7,14 @@ El desarrollo es con HTML, CSS y JavaScript.
 [Web -> Juego adivina el número secreto](https://wilalz.github.io/App-juego-Adivina-el-numero-secreto/)
 
 <!-- imagen -->
-![app](https://wilalz.github.io/App-juego-Adivina-el-numero-secreto/)
+![app](https://github.com/Wilalz/App-juego-Adivina-el-numero-secreto/blob/4e8b84ca720cd0ed3098c10bc6951bcbb0f92835/Juego%20Adivina%20el%20numero.jpg)
 
 ## Instalación
 Clona o descarga el repósitorio\
 Abre index.html desde un navegador web
 
 ## Tecnologias utilizadas
-HTML | CSS | JavaScript | BDD | Gherkin 
+HTML | CSS | JavaScript | BDD | Gherkin
 
 ## Participantes
 Wilson Alzate
