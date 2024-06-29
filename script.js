@@ -24,12 +24,10 @@ function verificar (){
         intentos++;
         palabraIntento="intentos";
     }
-    console.log("intentos: ", intentos)
 }
 
 function nuevoJuego (e) {
     nSecreto = numeroAleatorio();
-    console.log("numero secreto", nSecreto);
     input.value = "";
     btnNuevoJuego.disabled = true;
     btnVerificar.disabled = false;
@@ -52,7 +50,6 @@ function definirMensaje (msg){
 
 input.addEventListener("input", (e) => {
     nUsuario = parseInt(e.target.value);
-    console.log("numero usuario", nUsuario);
 })
 
 btnVerificar.addEventListener("click", verificar);
