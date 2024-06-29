@@ -11,5 +11,5 @@ Permite la realizacion de pruebas de calidad basadas en el comportamiento (BDD, 
 
 
 ## Requisitos
-[Ver Historias de usuario y Criterios de aceptación](https://github.com/Wilalz/App-juego-Adivina-el-numero-secreto/blob/main/doc/requisitos.md)
+[Ver Historias de usuario y Criterios de aceptación](https://github.com/Wilalz/App-juego-Adivina-el-numero-secreto/blob/main/docs/requisitos.md)
 
