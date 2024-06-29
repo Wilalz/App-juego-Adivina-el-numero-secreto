@@ -56,3 +56,7 @@
 
 ## Próximas funcionalidades
 [Ver backlog -> Listado de próximas funcionalidades](proximas_funcionalidades.md)
+
+**Escenario:** Hacer click en "Validar" sin haber ingresado un numero\
+**Cuando:** No he ingresado ningun numero y hago click en el boton "Validar"\
+**Entonces:** Debe mostar mensaje "Ingresa un numero del 1 al 10"
