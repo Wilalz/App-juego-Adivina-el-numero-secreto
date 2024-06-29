@@ -44,3 +44,7 @@
 **Cuando:** He realizado 3 intentos sin adivinar el número secreto\
 **Entonces:** Se muestra el mensaje “El número máximo de intentos es 3. ¡Inicia un nuevo juego!”\
 **Y:** Se activa el botón “Nuevo Juego”
+
+**Escenario:** Hacer click en "Validar" sin haber ingresado un numero\
+**Cuando:** No he ingresado ningun numero y hago click en el boton "Validar"\
+**Entonces:** Debe mostar mensaje "Ingresa un numero del 1 al 10"
