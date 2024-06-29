@@ -1,0 +1,3 @@
+**Escenario:** Hacer click en "Validar" sin haber ingresado un numero\
+**Cuando:** No he ingresado ningun numero y hago click en el boton "Validar"\
+**Entonces:** No se debe permitir la validación, mostar mensaje de error
