@@ -8,7 +8,7 @@ El desarrollo es con HTML, CSS y JavaScript.
   
 
 <!-- imagen -->
-![app](https://github.com/Wilalz/App-juego-Adivina-el-numero-secreto/blob/d792c512f3488904c07ea319363d9187eccf3aec/Juego_Adivina_el_numero.jpg)
+![app](https://github.com/Wilalz/App-juego-Adivina-el-numero-secreto/blob/0fa6a25274469b6525ad63f847b01be918f97479/Juego_Adivina_el_numero.jpg)
 
 ## Instalación
 Clona o descarga el repósitorio\
