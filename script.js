@@ -22,7 +22,6 @@ form.addEventListener("submit", (e) => {
                 definirMensaje("el numero secreto es menor");
                 input.value = "";
                 intentos++;
-                console.log("intentos: ", intentos);
                 palabraIntento="intentos";
             } else {
                 perdiste();
@@ -32,7 +31,6 @@ form.addEventListener("submit", (e) => {
                 definirMensaje("el numero secreto es mayor");
                 input.value = "";
                 intentos++;
-                console.log("intentos: ", intentos);
                 palabraIntento="intentos";
             } else {
                 perdiste();
@@ -45,7 +43,6 @@ form.addEventListener("submit", (e) => {
 
 function nuevoJuego (e) {
     nSecreto = numeroAleatorio();
-    console.log("nSecreto: ", nSecreto)
     input.value = "";
     btnNuevoJuego.disabled = true;
     btnVerificar.disabled = false;

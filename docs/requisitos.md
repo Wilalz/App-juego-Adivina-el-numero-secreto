@@ -1,4 +1,9 @@
-# Requisitos juego Adivina el numero secreto
+**Menú documentación**\
+[Intro](https://github.com/Wilalz/App-juego-Adivina-el-numero-secreto/blob/d792c512f3488904c07ea319363d9187eccf3aec/docs/intro_documentacion.md) - - -  [Requisitos](https://github.com/Wilalz/App-juego-Adivina-el-numero-secreto/blob/main/docs/requisitos.md) - - -  [Próximas funcionalidades](proximas_funcionalidades.md)
+
+---
+
+# Requisitos juego Adivina el número secreto
 
 **FEATURE:** Jugar al Juego del número secreto\
 **Como:** Usuario\
@@ -50,13 +55,8 @@
 **Cuando:** No he ingresado ningun numero y hago click en el boton "Validar"\
 **Entonces:** Debe mostar mensaje "Ingresa un numero del 1 al 10"
 
-
-## Intro documentación
-[Ver Intro documentación](https://github.com/Wilalz/App-juego-Adivina-el-numero-secreto/blob/d792c512f3488904c07ea319363d9187eccf3aec/docs/intro_documentacion.md)
-
-## Próximas funcionalidades
-[Ver backlog -> Listado de próximas funcionalidades](proximas_funcionalidades.md)
-
 **Escenario:** Hacer click en "Validar" sin haber ingresado un numero\
 **Cuando:** No he ingresado ningun numero y hago click en el boton "Validar"\
 **Entonces:** Debe mostar mensaje "Ingresa un numero del 1 al 10"
+
+
