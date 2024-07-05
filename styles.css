@@ -37,3 +37,34 @@ h1 {
 p {
     margin: 10px;
 }
+
+
+footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    width:100%;
+    min-height: 5%;
+    max-height: 10%;
+    
+    }
+    
+    .hLine{
+        height: 1px;
+        background-color: var(--color-wil);
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    #logo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
+    
+    .logo{
+        margin: 5px;
+        height: 1.2rem;
+    }
+    
