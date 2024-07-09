@@ -19,7 +19,7 @@ form.addEventListener("submit", (e) => {
             mensaje.innerText = `¡Lo adivinaste! 🤩 El numero secreto era ${nSecreto}, lo lograste en ${intentos} ${palabraIntento}`;
         } else if (nSecreto < nUsuario){
             if (intentos < 3){
-                definirMensaje("el numero secreto es menor");
+                definirMensaje("El numero secreto es menor");
                 input.value = "";
                 intentos++;
                 palabraIntento="intentos";
@@ -28,7 +28,7 @@ form.addEventListener("submit", (e) => {
             }
         } else {
             if(intentos < 3){
-                definirMensaje("el numero secreto es mayor");
+                definirMensaje("El numero secreto es mayor");
                 input.value = "";
                 intentos++;
                 palabraIntento="intentos";
@@ -81,5 +81,4 @@ function perdiste (){
     btnVerificar.disabled = true;
     btnNuevoJuego.disabled = false;
 }
-
 
