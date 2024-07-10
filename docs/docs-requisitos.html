@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número secreto</title>
+    <link rel="icon" type="image/png" href="../img/icons8-123-96.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="container-menu">
+        <ul>
+            <li><a href="../index.html">Jugar</a></li>
+            <li><a href="docs-intro.html">Intro</a></li>
+            <li><a href="docs-requisitos.html">Requisitos</a></li>
+            <li><a href="docs-proximas-funcionalidades.html">A futuro</a></li>
+        </ul>
+        <br>
+        <br>
+        <hr>
+    </nav>
+
+    <div class="container-docs">
+        <h1>Requisitos juego Adivina el número secreto</h1>
+        <br>
+        <div class="container-text">
+            <p><strong>Feature: </strong>Jugar al Juego del número secreto</p>
+            <p><strong>Como: </strong>Usuario</p>
+            <p><strong>Quiero: </strong>Un videojuego</p>
+            <p><strong>Para: </strong>Adivinar un número secreto y pasar un rato divertido</p>
+            <br>
+            <p><strong>Background:</strong></p>
+            <p><strong>Dado: </strong>Que estoy en la aplicación del videojuego “número secreto”</p>
+            <p><strong>Entonces: </strong>Veo un campo de entrada (desactivado), un botón “Verificar” (desactivado) y un botón “Nuevo Juego” (activado)</p>
+            <br>
+            <p><strong>Escenario: </strong>Generación de un número secreto aleatorio</p>
+            <p><strong>Dado: </strong>Que estoy en la aplicación del videojuego “número secreto”</p>
+            <p><strong>Entonces: </strong>Veo un campo de entrada (desactivado), un botón “Verificar” (desactivado) y un botón “Nuevo Juego” (activado)</p>
+            <br>
+            <p><strong>Escenario: </strong>Generación de un número secreto aleatorio</p>
+            <p><strong>Cuando: </strong>Hago clic en el botón “Nuevo Juego”</p>
+            <p><strong>Entonces: </strong>Se genera un número secreto aleatorio entre 1 y 10, desconocido Para: el usuario</p>
+            <p><strong>Y: </strong>Se activa el campo de entrada y el botón “Verificar”</p>
+            <br>
+            <p><strong>Escenario: </strong>Intento con un número mayor al múmero secreto</p>
+            <p><strong>Cuando: </strong>Ingreso un número mayor al número secreto</p>
+            <p><strong>Y: </strong>Hago clic en el botón “Verificar”</p>
+            <p><strong>Entonces: </strong>Se muestra el mensaje “El número secreto es menor”</p>
+            <br>
+            <p><strong>Escenario: </strong>Intento con un número menor al número secreto</p>
+            <p><strong>Cuando: </strong>Ingreso un número menor al número secreto</p>
+            <p><strong>Y: </strong>Hago clic en el botón “Verificar”</p>
+            <p><strong>Entonces: </strong>Se muestra el mensaje “El número secreto es mayor"</p>
+            <br>
+            <p><strong>Escenario: </strong>Inicio de un nuevo juego</p>
+            <p><strong>Cuando: </strong>Hago clic en el botón “Nuevo Juego”</p>
+            <p><strong>Entonces: </strong>Se inicia un nuevo juego</p>
+            <br>
+            <p><strong>Escenario: </strong>Adivinando el número correctamente (Éxito)</p>
+            <p><strong>Cuando: </strong>El número ingresado es igual al número secreto</p>
+            <p><strong>Entonces: </strong>Se muestra el mensaje “¡Lo adivinaste en ‘x’ intentos!”</p>
+            <br>
+            <p><strong>Escenario: </strong>Ingreso erróneo de caracteres</p>
+            <p><strong>Cuando: </strong>Ingreso un carácter que no es un número</p>
+            <p><strong>Entonces: </strong>No se permite; solo se pueden ingresar números del 1 al 10</p>
+            <br>
+            <p><strong>Escenario: </strong>Ingreso erróneo de números</p>
+            <p><strong>Cuando: </strong>Ingreso un número menor a 0 o mayor a 10</p>
+            <p><strong>Entonces: </strong>Se muestra un mensaje de “Solo puedes ingresar números del 1 al 10”</p>
+            <br>
+            <p><strong>Escenario: </strong>Límite de intentos alcanzado</p>
+            <p><strong>Cuando: </strong>He realizado 3 intentos sin adivinar el número secreto</p>
+            <p><strong>Entonces: </strong>Se muestra el mensaje “El número máximo de intentos es 3. ¡Inicia un nuevo juego!”</p>
+            <p><strong>Y: </strong>Se activa el botón “Nuevo Juego”</p>
+            <br>
+            <p><strong>Escenario: </strong>Hacer click en "Validar" sin haber ingresado un numero</p>
+            <p><strong>Cuando: </strong>No he ingresado ningun numero y hago click en el boton "Validar"</p>
+            <p><strong>Entonces: </strong>Debe mostar mensaje "Ingresa un numero del 1 al 10"</p>
+            <br>
+            <p><strong>Escenario: </strong>Hacer click en "Validar" sin haber ingresado un numero</p>
+            <p><strong>Cuando: </strong>No he ingresado ningun numero y hago click en el boton "Validar"</p>
+            <p><strong>Entonces: </strong>Debe mostar mensaje "Ingresa un numero del 1 al 10"</p>
+        </div>
+        
+    </div>
+    
+    <footer>
+        <div class="hLine"></div>
+        <div id="logo-container">
+            
+            <a href="https://www.linkedin.com/in/wilson-alzate-pineda/" target="_blank">
+                <img class="linkedin logo" src="../img/linkedin.svg" alt="LinkedIn">
+            </a>
+            
+            <a href="https://github.com/Wilalz" target="_blank">
+                <img class="linkedin logo" src="../img/github.svg" alt="GitHub">
+            </a>
+            
+            <a href="https://www.linkedin.com/in/wilson-alzate-pineda/" target="_blank">
+                <img class="linkedin logo" src="../img/wilson logo v2.0 svg.svg" alt="Logo Wilson">
+            </a>
+        </div>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

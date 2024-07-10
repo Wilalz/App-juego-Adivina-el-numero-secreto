@@ -10,7 +10,8 @@
 body {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
+    flex-direction: column;
     height: 100vh;
     background-color: blanchedalmond;
 }
@@ -18,6 +19,23 @@ body {
 h1 {
     margin: 30px;
     text-align: center;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 40px;
+    }
+
+li {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#mensaje{
+    text-align: center; 
+    margin: 10px;
 }
 
 .container {
@@ -28,6 +46,9 @@ h1 {
     height: 50%;
     width: 80%;
 }
+
+
+
 
 .container-msg {
     height: 8rem;
@@ -74,15 +95,31 @@ h1 {
 }
 
 
-
-
-p {
-    margin: 10px;
+.container-menu{
+    font-size: 0.7rem;
+    text-align: left;
+    width: 80%;
+    height: 20%;
 }
 
 
+.container-docs{
+    font-size: 0.7rem;
+    text-align: left;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
+.container-text{
+    width: 70%;
+}
 
+p strong {
+    font-weight: bold;
+}
 
 
 
@@ -111,7 +148,7 @@ footer {
     }
     
     .logo{
-        margin: 5px;
+        margin: 5px 15px;
         height: 1.2rem;
     }
     
