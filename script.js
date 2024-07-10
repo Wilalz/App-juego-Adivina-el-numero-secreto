@@ -7,39 +7,36 @@ let form = document.querySelector("form")
 let nUsuario;
 let intentos = 1;
 let palabraIntento = "intento";
+let temporizadorMensaje;
 
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
+    clearTimeout(temporizadorMensaje);
     if(input.value){
         if(nSecreto === nUsuario){
             btnNuevoJuego.disabled = false;
             btnVerificar.disabled = true;
             input.disabled = true;
             mensaje.innerText = `¡Lo adivinaste! 🤩 El numero secreto era ${nSecreto}, lo lograste en ${intentos} ${palabraIntento}`;
-        } else if (nSecreto < nUsuario){
-            if (intentos < 3){
+        } else if (intentos < 3){
+            if (nSecreto < nUsuario){
                 definirMensaje("El numero secreto es menor");
-                input.value = "";
-                intentos++;
-                palabraIntento="intentos";
             } else {
-                perdiste();
-            }
-        } else {
-            if(intentos < 3){
                 definirMensaje("El numero secreto es mayor");
-                input.value = "";
-                intentos++;
-                palabraIntento="intentos";
-            } else {
-                perdiste();
             }
+            input.value = "";
+            intentos++;
+            palabraIntento="intentos";
+        }else {
+            perdiste();
         }
     }else {
-        definirMensaje("Ingresa un numero del 1 al 10")
+        definirMensaje("Ingresa un número del 1 al 10")
     }
 })
+
+
 
 function nuevoJuego (e) {
     nSecreto = numeroAleatorio();
@@ -49,6 +46,7 @@ function nuevoJuego (e) {
     input.disabled = false;
     mensaje.innerText = "";
     intentos = 1;
+    palabraIntento = "intento";
 
 }
 
@@ -58,10 +56,18 @@ function numeroAleatorio (){
 
 function definirMensaje (msg){
     mensaje.innerText = msg;
-    setTimeout (() => {
+    temporizadorMensaje = setTimeout (() => {
         mensaje.innerText = ""
     }, 2000)
 }
+
+function perdiste (){
+    mensaje.innerText = `El numero secreto era ${nSecreto} 😓. ¡Inicia un nuevo juego!`;
+    input.disabled = true;
+    btnVerificar.disabled = true;
+    btnNuevoJuego.disabled = false;
+}
+
 
 input.addEventListener("input", (e) => {
     nUsuario = parseInt(e.target.value);
@@ -75,10 +81,7 @@ btnVerificar.disabled = true;
 input.disabled = true;
 
 
-function perdiste (){
-    mensaje.innerText = `El numero secreto era ${nSecreto} 😓. ¡Inicia un nuevo juego!`;
-    input.disabled = true;
-    btnVerificar.disabled = true;
-    btnNuevoJuego.disabled = false;
-}
+
+
+
 
